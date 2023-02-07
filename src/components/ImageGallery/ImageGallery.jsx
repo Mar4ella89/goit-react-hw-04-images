@@ -13,6 +13,7 @@ const ImageGallery = ({ items, showImage }) => {
       showImg={() => showImage({ largeImageURL })}
     />
   ));
+
   return <ul className={css.ImageGallery}>{elements}</ul>;
 };
 
