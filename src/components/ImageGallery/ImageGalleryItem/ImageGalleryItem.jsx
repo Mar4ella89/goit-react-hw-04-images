@@ -6,7 +6,12 @@ import css from './ImageGalleryItem.module.css';
 const ImageGalleryItem = ({ srcImg, showImg }) => {
   return (
     <li onClick={showImg} className={css.galleryItem}>
-      <img src={srcImg} alt="" className={css.ImageGalleryItemImage} />
+      <img
+        src={srcImg}
+        alt=""
+        loading="lazy"
+        className={css.ImageGalleryItemImage}
+      />
     </li>
   );
 };
